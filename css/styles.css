@@ -11,6 +11,33 @@ font-family: 'Gentium Book Basic', serif;
 }
 
 
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 18px 40px;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+.btn--second {
+    color: white;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid white;
+}
+
+.btn:active,
+.btn:hover {
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+}
 
 /* ------------------------------- */
 /* MENU */
@@ -19,14 +46,13 @@ font-family: 'Gentium Book Basic', serif;
 .menu {
     position: fixed;
     width: 100%;
-}
-
-.menu__wrapper {
+    z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .menu__img {
@@ -37,7 +63,7 @@ font-family: 'Gentium Book Basic', serif;
 .menu__burger {
     width: 50px;
     height: 50px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     background-color: transparent;
     border: none;
@@ -54,18 +80,15 @@ font-family: 'Gentium Book Basic', serif;
 }
 
 .menu__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+    width: 100%;
     text-align: center;
     list-style: none;
-    background-color: rgba(0, 0, 0, .5);
-    transform: translateX(-100%);
-    transition: .5s;
 }
 
-.menu__list.active {
-    transform: translateX(0);
+.menu__list--social {
+    display: flex;
+    list-style: none;
 }
 
 .menu__item {
@@ -96,6 +119,44 @@ font-family: 'Gentium Book Basic', serif;
 /* ------------------------------- */
 
 .header {
-    height: 200vh;
-    background-color: #777;
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__wrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 1.5px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.header__deco {
+    display: block;
+    width: 170px;
+    margin-bottom: 30px;
+}
+
+.header__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
