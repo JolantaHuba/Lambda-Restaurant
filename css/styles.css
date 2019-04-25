@@ -1,0 +1,101 @@
+/* 
+font-family: 'Yeseva One', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Gentium Book Basic', serif; 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ------------------------------- */
+/* MENU */
+/* ------------------------------- */
+
+.menu {
+    position: fixed;
+    width: 100%;
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu__img {
+    width: 100px;
+    margin: 10px 15px;
+}
+
+.menu__burger {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin: 10px 20px;
+    padding: 5px 10px;
+}
+
+.menu__icon {
+    display: none;
+}
+
+.menu__icon.active {
+    display: block;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(0, 0, 0, .5);
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+.menu__list.active {
+    transform: translateX(0);
+}
+
+.menu__item {
+    width: 100%;
+}
+
+.menu__item--social {
+    width: 33.33%;
+}
+
+.menu__link {
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'Yeseva One', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.menu__link--social {
+    color: #dab33e;
+    padding: 20px 0;
+}
+
+
+/* ------------------------------- */
+/* HEADER */
+/* ------------------------------- */
+
+.header {
+    height: 200vh;
+    background-color: #777;
+}
