@@ -15,27 +15,27 @@
 
 <body>
 
-    <nav class="menu">
-        <img class="menu__img" src="img/logo.png" alt="Lambda logo">
-        <button class="menu__burger" aria-label="Menu">
-            <span class="menu__icon active fas fa-bars"></span>
-            <span class="menu__icon fas fa-times"></span>
+    <nav class="nav">
+        <img class="nav__img" src="img/logo.png" alt="Lambda logo">
+        <button class="nav__burger" aria-label="Menu">
+            <span class="nav__icon active fas fa-bars"></span>
+            <span class="nav__icon fas fa-times"></span>
         </button>
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#ingredients">Ingredients</a></li>
-            <li class="menu__item"><a class="menu__link" href="#menu">Menu</a></li>
-            <li class="menu__item"><a class="menu__link" href="#reviews">Reviews</a></li>
-            <li class="menu__item"><a class="menu__link" href="#reservations">Reservations</a></li>
-            <li class="menu__item">
-                <ul class="menu__list--social">
-                    <li class="menu__item--social">
-                        <a class="menu__link menu__link--social" href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li class="menu__item--social">
-                        <a class="menu__link menu__link--social" href="#"><span class="fab fa-youtube"></span></a></li>
-                    <li class="menu__item--social">
-                        <a class="menu__link menu__link--social" href="#"><span class="fab fa-facebook-f"></span></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#ingredients">Ingredients</a></li>
+            <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
+            <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
+            <li class="nav__item"><a class="nav__link" href="#reservations">Reservations</a></li>
+            <li class="nav__item">
+                <ul class="nav__list--social">
+                    <li class="nav__item--social">
+                        <a class="nav__link nav__link--social" href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li class="nav__item--social">
+                        <a class="nav__link nav__link--social" href="#"><span class="fab fa-youtube"></span></a></li>
+                    <li class="nav__item--social">
+                        <a class="nav__link nav__link--social" href="#"><span class="fab fa-facebook-f"></span></a>
                     </li>
                 </ul>
             </li>
@@ -48,11 +48,130 @@
                 <br>for the right food</h1>
             <img class="header__deco" src="img/deco-header.png" alt="">
             <div class="header__buttons">
-                <button class="btn">Book a table</button>
-                <button class="btn btn--second">See the menu</button>
+                <a href="#contact" class="btn">Book a table</a>
+                <a href="#menu" class="btn btn--second">See the menu</a>
             </div>
         </div>
     </header>
+
+    <section class="about" id="about">
+        <div class="about__box">
+            <h2 class="secondary-title">Just the right food</h2>
+            <img class="deco" src="img/deco-brown.png" alt="">
+            <p class="about__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quo amet,
+                velit
+                ipsa eaque, sapiente
+                corporis enim vitae ullam optio laboriosam incidunt eligendi qui. Laboriosam doloremque eius quaerat
+                cumque
+                excepturi!</p>
+            <img class="about__photo" src="img/about-img.png" alt="Our chef photo">
+        </div>
+        <img class="about__plate" src="img/plate.png" alt="Dinner picture">
+    </section>
+
+    <section class="ingredients" id="ingredients">
+        <div class="ingredients__box">
+            <h2 class="secondary-title secondary-title--ing">Fine ingredients</h2>
+            <img class="deco" src="img/deco-white.png" alt="">
+            <p class="ingredients__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad illo
+                accusantium
+                reprehenderit eveniet iure recusandae totam suscipit, deserunt a obcaecati non necessitatibus adipisci,
+                nostrum aut earum et veniam qui.</p>
+            <ul class="ingredents__list">
+                <li class="ingredients__item"><img class="ingredients__img" src="img/ingreadiends-img1.png" alt="wheat">
+                </li>
+                <li class="ingredients__item"><img class="ingredients__img" src="img/ingreadiends-img2.png"
+                        alt="spices"></li>
+                <li class="ingredients__item"><img class="ingredients__img" src="img/ingreadiends-img3.png" alt="bread">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu__wrapper">
+            <div class="menu__box">
+                <h2 class="secondary-title">Appetisers</h2>
+                <img class="deco" src="img/deco-brown.png" alt="">
+                <div class="menu__dish">
+                    <h3 class="third-title">Tzatsiki</h3>
+                    <p class="dish__price">$3.99</p>
+                    <p class="dish__info text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="menu__dish">
+                    <h3 class="third-title">Augenbergine Salad</h3>
+                    <p class="dish__price">$5.50</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="menu__dish">
+                    <h3 class="third-title">Augenbergine Salad</h3>
+                    <p class="dish__price">$5.25</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+            </div>
+
+            <div class="menu__box">
+                <h2 class="secondary-title">Salads</h2>
+                <img class="deco" src="img/deco-brown.png" alt="">
+                <div class="menu__dish">
+                    <h3 class="third-title">Olive Special</h3>
+                    <p class="dish__price">$5.99</p>
+                    <p class="dish__info text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="menu__dish menu__dish--special">
+                    <h3 class="third-title">Grek Salad</h3>
+                    <p class="dish__price">$5.50</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="menu__dish">
+                    <h3 class="third-title">Gusto Salad</h3>
+                    <p class="dish__price">$5.25</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+            </div>
+
+            <div class="menu__box">
+                <h2 class="secondary-title">Starters</h2>
+                <img class="deco" src="img/deco-brown.png" alt="">
+                <div class="menu__dish">
+                    <h3 class="third-title">Haloumi</h3>
+                    <p class="dish__price">$3.99</p>
+                    <p class="dish__info text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="menu__dish">
+                    <h3 class="third-title">Spinach Pie</h3>
+                    <p class="dish__price">$5.50</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+            </div>
+
+            <div class="menu__box">
+                <h2 class="secondary-title">Main Dishes</h2>
+                <img class="deco" src="img/deco-brown.png" alt="">
+                <div class="menu__dish">
+                    <h3 class="third-title">Cornish Mackerel</h3>
+                    <p class="dish__price">$3.99</p>
+                    <p class="dish__info text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+                <div class="menu__dish menu__dish--special">
+                    <h3 class="third-title">Roast Lamb</h3>
+                    <p class="dish__price">$5.50</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="menu__dish">
+                    <h3 class="third-title">Fried Chicken</h3>
+                    <p class="dish__price">$5.25</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+                <div class="menu__dish">
+                    <h3 class="third-title">Pastitsio</h3>
+                    <p class="dish__price">$5.25</p>
+                    <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <script src="http://code.jquery.com/jquery-3.4.0.min.js"

@@ -1,4 +1,4 @@
-$('.menu__burger').on('click', function () {
-    $('.menu__icon').toggleClass('active');
-    $('.menu__list').slideToggle();
+$('.nav__burger').on('click', function () {
+    $('.nav__icon').toggleClass('active');
+    $('.nav__list').slideToggle();
 })

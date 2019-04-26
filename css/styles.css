@@ -10,6 +10,10 @@ font-family: 'Gentium Book Basic', serif;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 .btn {
     font-family: 'Lato', sans-serif;
@@ -17,6 +21,7 @@ font-family: 'Gentium Book Basic', serif;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
+    text-decoration: none;
     background-color: rgba(0, 0, 0, .5);
     border: 1px solid black;
     cursor: pointer;
@@ -39,11 +44,23 @@ font-family: 'Gentium Book Basic', serif;
     border: 1px solid black;
 }
 
+.text {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: #4c4c4c;
+    line-height: 145%;
+}
+
+.deco {
+    width: 200px;
+    margin: 15px 0 25px;
+}
+
 /* ------------------------------- */
 /* MENU */
 /* ------------------------------- */
 
-.menu {
+.nav {
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -52,15 +69,15 @@ font-family: 'Gentium Book Basic', serif;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
 }
 
-.menu__img {
+.nav__img {
     width: 100px;
     margin: 10px 15px;
 }
 
-.menu__burger {
+.nav__burger {
     width: 50px;
     height: 50px;
     font-size: 1.8rem;
@@ -71,35 +88,35 @@ font-family: 'Gentium Book Basic', serif;
     padding: 5px 10px;
 }
 
-.menu__icon {
+.nav__icon {
     display: none;
 }
 
-.menu__icon.active {
+.nav__icon.active {
     display: block;
 }
 
-.menu__list {
+.nav__list {
     display: none;
     width: 100%;
     text-align: center;
     list-style: none;
 }
 
-.menu__list--social {
+.nav__list--social {
     display: flex;
     list-style: none;
 }
 
-.menu__item {
+.nav__item {
     width: 100%;
 }
 
-.menu__item--social {
+.nav__item--social {
     width: 33.33%;
 }
 
-.menu__link {
+.nav__link {
     display: block;
     font-size: 1.2rem;
     font-family: 'Yeseva One', sans-serif;
@@ -108,7 +125,7 @@ font-family: 'Gentium Book Basic', serif;
     padding: 12px 0;
 }
 
-.menu__link--social {
+.nav__link--social {
     color: #dab33e;
     padding: 20px 0;
 }
@@ -151,7 +168,8 @@ font-family: 'Gentium Book Basic', serif;
 
 .header__deco {
     display: block;
-    width: 170px;
+    width: 60%;
+    max-width: 200px;
     margin-bottom: 30px;
 }
 
@@ -160,3 +178,183 @@ font-family: 'Gentium Book Basic', serif;
     flex-direction: column;
     align-items: center;
 }
+
+/* ------------------------------- */
+/* ABOUT */
+/* ------------------------------- */
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 3.6rem 0;
+    text-align: center;
+    background-image: url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.secondary-title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.7rem;
+    color: #cc9900;
+    letter-spacing: 1px;
+}
+
+/* 
+.about__text {
+    width: 80%;
+} */
+
+.about__photo {
+    margin-top: 30px;
+    transform: translateX(20%);
+}
+
+.about__plate {
+    display: none;
+}
+
+/* ------------------------------- */
+/* INGREDIENTS */
+/* ------------------------------- */
+
+.ingredients {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/ingredients-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3.6rem 0;
+}
+
+.ingredients__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 25px;
+}
+
+.secondary-title--ing {
+    color: white;
+}
+
+.ingredients__text {
+    color: #fff;
+}
+
+.ingredents__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.ingredients__item {
+    width: 30%;
+}
+
+.ingredients__img {
+    width: 100%;
+    max-width: 110px;
+}
+
+/* ------------------------------- */
+/* MENU */
+/* ------------------------------- */
+
+.menu {
+    background-image: url(../img/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3.6rem 0 1.4rem;
+}
+
+.menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 35px;
+}
+
+.menu__dish {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 5px;
+}
+
+.menu__dish--special {
+    border: 1px solid rgba(204, 153, 0, .4)
+}
+
+.menu__dish--special::before {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    height: 15px;
+    content: "Special";
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(204, 153, 0, .6);
+    padding: 2px 10px;
+}
+
+.third-title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1rem;
+    color: #cc9900;
+    letter-spacing: 1.5px;
+}
+
+.dish__price {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.1rem;
+    color: #cc9900;
+    letter-spacing: 1.5px;
+}
+
+.dish__info {
+    width: 100%;
+}
+
+.dish__info::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .9px;
+    background-color: rgba(204, 153, 0, .4);
+    margin: 5px 0;
+}
+
+
+/* ------------------------------- */
+/* REVIEWS */
+/* ------------------------------- */
