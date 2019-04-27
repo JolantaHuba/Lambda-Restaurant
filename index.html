@@ -16,7 +16,7 @@
 <body>
 
     <nav class="nav">
-        <div class="nav__logo"><img class="logo__img" src="img/logo.png" alt="Lambda logo"></div>
+        <div class="nav__logo"><a href="#home"><img class="logo__img" src="img/logo.png" alt="Lambda logo"></a></div>
         <button class="nav__burger" aria-label="Menu">
             <span class="nav__icon active fas fa-bars"></span>
             <span class="nav__icon fas fa-times"></span>
@@ -44,7 +44,7 @@
                 <br>for the right food</h1>
             <img class="header__deco" src="img/deco-header.png" alt="">
             <div class="header__buttons">
-                <a href="#contact" class="btn">Book a table</a>
+                <a href="#reservations" class="btn">Book a table</a>
                 <a href="#menu" class="btn btn--second">See the menu</a>
             </div>
         </div>
@@ -59,10 +59,13 @@
                 ipsa eaque, sapiente
                 corporis enim vitae ullam optio laboriosam incidunt eligendi qui. Laboriosam doloremque eius quaerat
                 cumque
-                excepturi!</p>
+                excepturi! Dignissimos quo amet, velit ipsa eaque, sapiente
+                corporis enim vitae ullam optio laboriosam incidunt eligendi qui. Laboriosam doloremque eius quaerat
+                cumque
+                excepturi</p>
             <img class="about__photo" src="img/about-img.png" alt="Our chef photo">
         </div>
-        <img class="about__plate" src="img/plate.png" alt="Dinner picture">
+        <div class="about__plate"><img class="about__img" src="img/plate.png" alt="Dinner picture"></div>
     </section>
 
     <section class="ingredients" id="ingredients">
@@ -72,7 +75,9 @@
             <p class="ingredients__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad illo
                 accusantium
                 reprehenderit eveniet iure recusandae totam suscipit, deserunt a obcaecati non necessitatibus adipisci,
-                nostrum aut earum et veniam qui.</p>
+                nostrum aut earum et veniam qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eos
+                iure perspiciatis maiores doloremque hic commodi voluptas magnam tempore rem! Eligendi debitis magnam
+                dignissimos iusto numquam labore? Expedita, veritatis!</p>
             <ul class="ingredents__list">
                 <li class="ingredients__item"><img class="ingredients__img" src="img/ingreadiends-img1.png" alt="wheat">
                 </li>
@@ -165,10 +170,94 @@
                     <p class="dish__info text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <section class="reviews" id="reviews">
+        <div class="review__box">
+            <h2 class="secondary-title secondary-title--ing">Guest Reviews</h2>
+            <img src="img/deco-white.png" alt="" class="deco">
+            <blockquote class="review__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint esse voluptate
+                laboriosam id facere animi, accusantium tempore velit nostrum? Illum non, iusto tenetur sed omnis
+                quos neque beatae. Ullam, aspernatur!
+                <cite class="review__author text">-food inc, New York</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="contact" id="reservations">
+        <div class="contact__images">
+            <img class="contact__img" src="img/reservations-img1.jpg" alt="Dinner dish">
+            <img class="contact__img" src="img/reservations-img2.jpg" alt="Dessert">
+        </div>
+        <div class="contact__wrapper">
+            <h2 class="secondary-title">Just the right food</h2>
+            <img class="deco" src="img/deco-brown.png" alt="">
+            <p class="contact__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolores
+                assumenda
+                quos esse fuga
+                cumque similique voluptates minus, dolorum laudantium tempore, ad repellendus non? Illum, nostrum! Ipsum
+                consequuntur nesciunt qui! Lorem ipsum, dolor sit amet.
+            </p>
+            <form class="contact__form">
+                <div class="input__wrapper">
+                    <label class="contact__label" for="username">Name</label>
+                    <input class="contact__field" type="text" name="username" id="username" placeholder="your name *"
+                        required></div>
+                <div class="input__wrapper">
+                    <label class="contact__label" for="email">Email</label>
+                    <input class="contact__field" type="email" name="email" id="email" placeholder="your email *"
+                        required>
+                </div>
+                <div class="input__wrapper">
+                    <label class="contact__label" for="date">Date</label>
+                    <input class="contact__field" type="date" name="date" id="date" placeholder="date *" required></div>
+                <div class="input__wrapper">
+                    <label class="contact__label" for="number">Party number</label>
+                    <select class="contact__field" name="number" id="number" required>
+                        <option value disabled selected>party number</option>
+                        <option value="London">123</option>
+                        <option value="Warsaw">345</option>
+                        <option value="Barcelona">567</option>
+                    </select>
+                </div>
+                <div class="btn__wrapper">
+                    <button class="contact__btn">Book now!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__box">
+                <h3 class="third-title third-title--footer">About Us</h3>
+                <img src="img/deco-white.png" alt="" class="deco">
+                <p class="text text--footer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla
+                    officiis
+                    laboriosam repellat quia dicta. Vitae ratione iste tempore dolorem, alias dicta deleniti
+                    exercitationem itaque minus assumenda excepturi ducimus eos!</p>
+            </div>
+            <div class="footer__box">
+                <h3 class="third-title third-title--footer">Opening Hours</h3>
+                <img src="img/deco-white.png" alt="" class="deco">
+                <p class="text text--footer"><span class="bold">Mon-Thu:</span> 7:00am-8:00pm</p>
+                <p class="text text--footer"><span class="bold">Fri-Sun:</span> 7:00am-10:00pm</p>
+            </div>
+            <div class="footer__box">
+                <h3 class="third-title third-title--footer">Our Location</h3>
+                <img src="img/deco-white.png" alt="" class="deco">
+                <p class="text text--footer bold">19th Paradise Street Sitia</p>
+                <p class="text text--footer bold">128 Meserole Avenue</p>
+                <div class="footer__socials">
+                    <a class="footer__social" href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a class="footer__social" href="#"><span class="fab fa-youtube"></span></a>
+                    <a class="footer__social" href="#"><span class="fab fa-twitter"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="http://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>

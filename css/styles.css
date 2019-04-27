@@ -14,6 +14,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* body {
+    max-width: 2000px;
+    margin: 0 auto;
+} */
+
 @media (min-width: 768px) {
     html {
         font-size: 20px;
@@ -54,6 +59,13 @@ html {
     font-size: 0.9rem;
     color: #4c4c4c;
     line-height: 145%;
+}
+
+
+@media (min-width: 1024px) {
+    .text {
+        font-size: 0.8rem;
+    }
 }
 
 .deco {
@@ -185,10 +197,6 @@ html {
     }
 }
 
-/* ------------------------------- */
-/* HERE WE ARE */
-/* ------------------------------- */
-
 @media (min-width: 1024px) {
 
     .nav__logo {
@@ -283,6 +291,7 @@ html {
     letter-spacing: 1.5px;
     line-height: 140%;
     margin-bottom: 30px;
+    text-shadow: 1px 1px 1px rgb(29, 29, 29);
 }
 
 .header__deco {
@@ -330,6 +339,28 @@ html {
         margin-top: 40px;
     }
 
+    .btn {
+        width: 30%;
+        font-size: .8rem;
+        padding: 18px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .header__buttons {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .btn {
+        width: 40%;
+        font-size: .8rem;
+        padding: 18px;
+    }
 }
 
 /* ------------------------------- */
@@ -339,7 +370,7 @@ html {
 .about {
     display: flex;
     justify-content: center;
-    padding: 3.6rem 0;
+    padding: 4rem 0;
     text-align: center;
     background-image: url(../img/about-bg.jpg);
     background-repeat: no-repeat;
@@ -359,12 +390,8 @@ html {
     font-size: 1.7rem;
     color: #cc9900;
     letter-spacing: 1px;
+    text-align: center;
 }
-
-/* 
-.about__text {
-    width: 80%;
-} */
 
 .about__photo {
     margin-top: 30px;
@@ -373,6 +400,32 @@ html {
 
 .about__plate {
     display: none;
+}
+
+@media (min-width: 1024px) {
+
+    .about {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__box {
+        width: 30%;
+        margin-right: 60px;
+    }
+
+    .about__plate {
+        width: 40%;
+        display: block;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .about__photo {
+        margin-top: 50px;
+    }
 }
 
 /* ------------------------------- */
@@ -386,7 +439,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 3.6rem 0;
+    padding: 4rem 0;
 }
 
 .ingredients__box {
@@ -425,6 +478,23 @@ html {
     max-width: 110px;
 }
 
+@media (min-width: 1024px) {
+
+    .ingredients {
+        justify-content: flex-end;
+    }
+
+    .ingredients__box {
+        width: 40%;
+        padding: 70px;
+        margin-right: 100px;
+    }
+
+    .ingredients__text {
+        font-size: .8rem;
+    }
+}
+
 /* ------------------------------- */
 /* MENU */
 /* ------------------------------- */
@@ -434,13 +504,14 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 3.6rem 0 1.4rem;
+    padding: 4rem 0 1.4rem;
 }
 
 .menu__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .menu__box {
@@ -507,7 +578,274 @@ html {
     margin: 5px 0;
 }
 
+@media (min-width: 1024px) {
+    .menu__wrapper {
+        flex-wrap: wrap;
+        width: 80%;
+        max-height: 1000px;
+    }
+
+    .menu__box {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+}
+
 
 /* ------------------------------- */
 /* REVIEWS */
 /* ------------------------------- */
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/revievs-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+}
+
+.review__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.review__text {
+    width: 90%;
+    /* margin: 0 auto; */
+    position: relative;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 1rem;
+    color: #dde0df;
+    line-height: 140%;
+}
+
+.review__text::before {
+    display: block;
+    content: "\201C";
+    font-size: 40px;
+    color: #dde0df;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+
+.review__author {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    line-height: 145%;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    .review__box {
+        width: 50%;
+    }
+}
+
+/* ------------------------------- */
+/* CONTACT */
+/* ------------------------------- */
+
+.contact {
+    background-image: url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 10%;
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__images {
+    display: none;
+}
+
+.contact__text {
+    text-align: center;
+}
+
+.contact__form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input__wrapper {
+    margin: 8px 0;
+}
+
+.contact__label {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: #cc9900;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact__field {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    color: gray;
+    border: 1px solid gray;
+    outline-color: #cc9900;
+    font-style: italic;
+}
+
+.contact__field:focus {
+    border-color: #cc9900;
+}
+
+.btn__wrapper {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.contact__btn {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #cc9900;
+    border: none;
+    font-size: .9rem;
+    padding: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact__btn:hover,
+.contact__btn:active {
+    background-color: #a07800;
+}
+
+
+@media (min-width: 1024px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact__text {
+        width: 80%;
+    }
+
+    .contact__images {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 45%;
+        margin-right: 40px;
+    }
+
+    .contact__img {
+        width: 48%;
+    }
+
+    .contact__wrapper {
+        width: 50%;
+    }
+
+    .contact__form {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .input__wrapper {
+        width: 46%;
+    }
+
+    .contact__btn {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* ------------------------------- */
+/* CONTACT */
+/* ------------------------------- */
+
+.footer {
+    background-color: #191919;
+    padding: 4rem 0 2.5rem;
+}
+
+.footer__wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer__box {
+    margin-bottom: 50px;
+}
+
+.third-title--footer {
+    color: #e9e9e9;
+}
+
+.text--footer {
+    color: #e9e9e9;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.footer__socials {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 35px auto 0;
+}
+
+.footer__social {
+    color: #e9e9e9;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.footer__social:hover,
+.footer__social:active {
+    color: #cc9900;
+}
+
+@media (min-width: 1024px) {
+    .footer__wrapper {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .footer__box {
+        width: 33.33%;
+        padding: 10px;
+    }
+
+    .footer__socials {
+        width: 50%;
+    }
+}
