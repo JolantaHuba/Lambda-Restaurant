@@ -3,12 +3,6 @@ $('.nav__burger').on('click', function () {
     $('.nav__list').slideToggle();
 })
 
-if ($(document).outerWidth() < 1024) {
-    $('.nav__link').on('click', function () {
-        $('.nav__list').css('display', 'none');
-    })
-}
-
 $('.nav__link').hover(function () {
     $(this).parent().toggleClass('active');
 })
